@@ -1,0 +1,25 @@
+# Large or rebuildable data
+data/raw/cdc_cdi.csv
+data/raw/cdc_cdi.csv.gz
+data/raw/*.part
+data/processed/
+build/
+*.db
+*.db-journal
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+dist/
+
+# Editors and OS
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
