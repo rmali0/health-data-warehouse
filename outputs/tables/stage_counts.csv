@@ -1,0 +1,9 @@
+stage,measure,count
+ingest,CDC rows read,309215
+validate,CDC rows after natural-key dedup,309215
+validate,CDC rows with a numeric value,209196
+transform,Overall-population rows with a value,27483
+transform,Indicators in the panel,109
+transform,Wide panel rows (location x period),583
+ingest,openFDA label records,1
+ingest,Simulated encounter rows,5

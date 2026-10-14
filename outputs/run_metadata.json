@@ -1,0 +1,55 @@
+{
+  "run_at": "2026-10-14T06:50:23+00:00",
+  "mode": "full",
+  "package_version": "2.0.0",
+  "python": "3.13.16",
+  "pandas": "3.0.5",
+  "sources": [
+    {
+      "name": "CDC Chronic Disease Indicators (CSV)",
+      "file": "data/raw/cdc_cdi.csv",
+      "sha256": "a988e65ea75604ff003d70dc7a1c482b240c54417d8cf0949416f4bd213639e6",
+      "rows": 309215
+    },
+    {
+      "name": "openFDA drug labels (JSON)",
+      "file": "data/raw/openfda_drug_labels.json",
+      "sha256": "71c299c7b2bea67f67e999d25fb93df2e68efd196fc4330cd2bdc2be78475f7d",
+      "rows": 1
+    },
+    {
+      "name": "Simulated clinical encounters (HTML)",
+      "file": "data/raw/simulated_clinical_encounters.html",
+      "sha256": "90fe6b9a9c18445823a86deeddc5c564eb0d9e40429fe0c172a06b5a41e1b846",
+      "rows": 5
+    }
+  ],
+  "table_counts": {
+    "cdc_indicators": 583,
+    "cdc_raw_clean": 309215,
+    "indicator_catalog": 109,
+    "fda_drug_labels": 1,
+    "clinical_encounters": 5,
+    "etl_runs": 1
+  },
+  "wide_indicator_columns": 109,
+  "checks_flagged": [
+    "cdc_raw_clean: IQR outlier within indicator, period and stratum (6692)",
+    "cdc_raw_clean: |z| > 3 within indicator, period and stratum (1867)"
+  ],
+  "exports": [
+    "cdc_cdi_clean_20261014.csv.gz",
+    "cdc_cdi_wide_20261014.csv",
+    "clinical_encounters_20261014.csv",
+    "openfda_drug_labels_clean_20261014.csv"
+  ],
+  "stage_seconds": {
+    "ingest": 2.03,
+    "clean": 3.98,
+    "validate": 0.86,
+    "transform": 0.22,
+    "load": 5.34,
+    "report": 4.69,
+    "export": 5.33
+  }
+}

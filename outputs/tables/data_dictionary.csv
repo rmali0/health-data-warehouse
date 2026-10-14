@@ -1,0 +1,176 @@
+table,column,sql_type,description,non_null,pct_missing,n_unique,example
+cdc_raw_clean,row_id,INTEGER,Surrogate key assigned at load time.,309215,0.0,309215,1
+cdc_raw_clean,year_start,INTEGER,First year of the reporting period.,309215,0.0,7,2020
+cdc_raw_clean,year_end,INTEGER,Last year of the reporting period (equal to year_start for single-year estimates).,309215,0.0,4,2020
+cdc_raw_clean,location_abbr,TEXT,"Two-letter state, territory or US code.",309215,0.0,55,US
+cdc_raw_clean,location_desc,TEXT,Location name.,309215,0.0,55,United States
+cdc_raw_clean,location_id,INTEGER,CDC numeric location identifier.,309215,0.0,55,59
+cdc_raw_clean,data_source,TEXT,"Survey or surveillance system behind the estimate (BRFSS, NVSS, YRBSS, ...).",309215,0.0,14,BRFSS
+cdc_raw_clean,topic_id,TEXT,CDC topic code.,309215,0.0,19,HEA
+cdc_raw_clean,topic,TEXT,Chronic disease topic.,309215,0.0,19,Health Status
+cdc_raw_clean,question_id,TEXT,"CDC indicator code, e.g. DIA01.",309215,0.0,109,HEA04
+cdc_raw_clean,question,TEXT,Indicator definition.,309215,0.0,109,Recent activity limitation among adults
+cdc_raw_clean,data_value_type_id,TEXT,"Code for the kind of estimate (CRDPREV, AGEADJPREV, CRDRATE, NMBR, ...).",309215,0.0,12,AGEADJMEAN
+cdc_raw_clean,data_value_type,TEXT,"Kind of estimate, e.g. crude or age-adjusted prevalence.",309215,0.0,12,Age-adjusted Mean
+cdc_raw_clean,data_value_unit,TEXT,"Unit of data_value (%, per 100,000, Number, ...).",309215,0.0,8,Number
+cdc_raw_clean,data_value,REAL,"Estimate, parsed from DataValueAlt with thousands separators removed. Missing when suppressed or not collected.",209196,32.3,14852,2.9
+cdc_raw_clean,low_confidence_limit,REAL,Lower 95% confidence limit.,188885,38.9,8412,2.8
+cdc_raw_clean,high_confidence_limit,REAL,Upper 95% confidence limit.,188890,38.9,8861,2.9
+cdc_raw_clean,data_value_footnote_symbol,TEXT,CDC footnote symbol.,101716,67.1,9,~
+cdc_raw_clean,data_value_footnote,TEXT,"CDC footnote text, including the reason a value is missing.",101716,67.1,9,Data suppressed; too few respondents or cases
+cdc_raw_clean,stratification_category_id1,TEXT,"Stratification dimension code (OVERALL, SEX, AGE, RACE, GRADE).",309215,0.0,5,SEX
+cdc_raw_clean,stratification_category1,TEXT,Stratification dimension.,309215,0.0,5,Sex
+cdc_raw_clean,stratification_id1,TEXT,Stratum code within the dimension.,309215,0.0,26,SEXF
+cdc_raw_clean,stratification1,TEXT,"Stratum, e.g. Female or Hispanic.",309215,0.0,26,Female
+cdc_raw_clean,geolocation,TEXT,Location centroid as WKT POINT text.,303452,1.9,54,POINT (-92.27449074299966 34.74865012400045)
+cdc_raw_clean,is_outlier_iqr,INTEGER,"1 if the value is outside the 1.5 x IQR fences of other locations with the same indicator, value type, period and stratum (groups of 10 or more; US row excluded).",309215,0.0,2,False
+cdc_raw_clean,z_score,REAL,Standardized value within the same comparison group as is_outlier_iqr.,201133,35.0,166230,-0.20084889968650455
+cdc_raw_clean,is_outlier_z,INTEGER,1 if |z_score| > 3.,309215,0.0,2,False
+cdc_indicators,location_abbr,TEXT,"Two-letter state, territory or US code.",583,0.0,55,AK
+cdc_indicators,location_desc,TEXT,Location name.,583,0.0,55,Alaska
+cdc_indicators,year_start,INTEGER,First year of the reporting period.,583,0.0,7,2015
+cdc_indicators,year_end,INTEGER,Last year of the reporting period (equal to year_start for single-year estimates).,583,0.0,4,2019
+cdc_indicators,alc01,REAL,"Alcohol use among high school students (Crude Prevalence, %)",94,83.9,72,22.1
+cdc_indicators,alc04,REAL,"Binge drinking frequency among adults who binge drink (Crude Median, Number)",215,63.1,15,1.6
+cdc_indicators,alc05,REAL,"Binge drinking intensity among adults who binge drink (Crude Median, Number)",216,63.0,18,5.4
+cdc_indicators,alc06,REAL,"Binge drinking prevalence among adults (Age-adjusted Prevalence, %)",216,63.0,94,16.0
+cdc_indicators,alc07,REAL,"Binge drinking prevalence among high school students (Crude Prevalence, %)",90,84.6,65,13.1
+cdc_indicators,alc08,REAL,"Per capita alcohol consumption among people aged 14 years and older (Per capita alcohol consumption gallons, gallons)",156,73.2,88,2.9
+cdc_indicators,alc09,REAL,"Chronic liver disease mortality among all people, underlying cause (Age-adjusted Rate, cases per 100,000)",156,73.2,90,14.5
+cdc_indicators,art01,REAL,"Arthritis among adults (Age-adjusted Prevalence, %)",162,72.2,89,21.5
+cdc_indicators,art02,REAL,"Activity limitation due to arthritis among adults with arthritis (Age-adjusted Prevalence, %)",107,81.6,51,9.3
+cdc_indicators,art03,REAL,"Severe joint pain among adults with arthritis (Age-adjusted Prevalence, %)",107,81.6,86,25.1
+cdc_indicators,art04,REAL,"Work limitation due to arthritis among adults aged 18-64 years with arthritis (Age-adjusted Prevalence, %)",107,81.6,89,46.7
+cdc_indicators,art05,REAL,"Physical inactivity among adults with arthritis (Age-adjusted Prevalence, %)",107,81.6,76,33.4
+cdc_indicators,art06,REAL,"Received health care provider counseling for physical activity among adults with arthritis (Age-adjusted Prevalence, %)",107,81.6,85,75.3
+cdc_indicators,art07,REAL,"Have taken an educational class to learn how to manage arthritis symptoms among adults with arthritis (Age-adjusted Prevalence, %)",106,81.8,69,20.0
+cdc_indicators,ast01,REAL,"Asthma mortality among all people, underlying cause (Age-adjusted Rate, cases per 100,000)",118,79.8,13,1.1
+cdc_indicators,ast02,REAL,"Current asthma among adults (Age-adjusted Prevalence, %)",216,63.0,58,10.5
+cdc_indicators,can01,REAL,"Colon and rectum (colorectal) cancer mortality among all people, underlying cause (Age-adjusted Rate, per 100,000)",104,82.2,51,14.6
+cdc_indicators,can02,REAL,"Breast cancer mortality among all females, underlying cause (Age-adjusted Rate, per 100,000)",104,82.2,53,17.8
+cdc_indicators,can03,REAL,"Cervical cancer mortality among all females, underlying cause (Age-adjusted Rate, per 100,000)",104,82.2,26,1.7
+cdc_indicators,can04,REAL,"Lung and bronchial cancer mortality among all people, underlying cause (Age-adjusted Rate, per 100,000)",104,82.2,92,34.6
+cdc_indicators,can05,REAL,"Prostate cancer mortality among all males, underlying cause (Age-adjusted Rate, per 100,000)",104,82.2,54,19.1
+cdc_indicators,can06,REAL,"Colorectal cancer screening among adults aged 45-75 years (Age-adjusted Prevalence, %)",109,81.3,81,60.0
+cdc_indicators,can07,REAL,"Invasive cancer (all sites combined), incidence (Age-adjusted Rate, per 100,000)",104,82.2,95,426.9
+cdc_indicators,can08,REAL,"Invasive cancer (all sites combined) mortality among all people, underlying cause (Age-adjusted Rate, per 100,000)",104,82.2,92,149.4
+cdc_indicators,can09,REAL,"Mammography use among women aged 50-74 years (Age-adjusted Prevalence, %)",108,81.5,82,69.5
+cdc_indicators,can10,REAL,"Cervical cancer screening among women aged 21-65 years (Age-adjusted Prevalence, %)",54,90.7,37,76.8
+cdc_indicators,cvd01,REAL,"High blood pressure among adults (Age-adjusted Prevalence, %)",107,81.6,79,50.0
+cdc_indicators,cvd02,REAL,"Taking medicine to control high blood pressure among adults with high blood pressure (Age-adjusted Prevalence, %)",107,81.6,83,43.5
+cdc_indicators,cvd03,REAL,"High cholesterol among adults who have been screened (Age-adjusted Prevalence, %)",107,81.6,66,25.6
+cdc_indicators,cvd04,REAL,"Taking medicine for high cholesterol among adults (Age-adjusted Prevalence, %)",107,81.6,64,25.4
+cdc_indicators,cvd06,REAL,"Hospitalization for heart failure as principal diagnosis, Medicare-beneficiaries aged 65 years and older (Age-adjusted Rate, cases per 1,000)",156,73.2,150,9.8
+cdc_indicators,cvd07,REAL,"Cerebrovascular disease (stroke) mortality among all people, underlying cause (Age-adjusted Rate, cases per 100,000)",156,73.2,113,34.9
+cdc_indicators,cvd08,REAL,"Coronary heart disease mortality among all people, underlying cause (Age-adjusted Rate, cases per 100,000)",156,73.2,140,62.0
+cdc_indicators,cvd09,REAL,"Diseases of the heart mortality among all people, underlying cause (Age-adjusted Rate, cases per 100,000)",156,73.2,143,129.7
+cdc_indicators,ckd01,REAL,"Incidence of treated end-stage kidney disease (Adjusted rate by age, sex, race and ethnicity, cases per 1,000,000)",52,91.1,52,213.4
+cdc_indicators,copd01,REAL,"Chronic obstructive pulmonary disease among adults (Age-adjusted Prevalence, %)",214,63.3,66,4.6
+cdc_indicators,copd02,REAL,"Current smoking among adults with chronic obstructive pulmonary disease (Age-adjusted Prevalence, %)",159,72.7,125,54.4
+cdc_indicators,copd03,REAL,"Hospitalization for chronic obstructive pulmonary disease as any diagnosis, Medicare-beneficiaries aged 65 years and older (Age-adjusted Rate, cases per 1,000)",156,73.2,154,42.77
+cdc_indicators,copd04,REAL,"Hospitalization for chronic obstructive pulmonary disease as principal diagnosis, Medicare-beneficiaries aged 65 years and older (Age-adjusted Rate, cases per 1,000)",156,73.2,141,3.66
+cdc_indicators,copd05,REAL,"Chronic obstructive pulmonary disease mortality among adults aged 45 years and older, underlying cause (Age-adjusted Rate, cases per 100,000)",156,73.2,148,81.7
+cdc_indicators,copd06,REAL,"Chronic obstructive pulmonary disease mortality among adults aged 45 years and older, underlying or contributing cause (Age-adjusted Rate, cases per 100,000)",156,73.2,152,173.7
+cdc_indicators,chc01,REAL,"Subjective cognitive decline among adults aged 45 years and older (Age-adjusted Prevalence, %)",79,86.4,50,8.7
+cdc_indicators,chc02,REAL,"Discussed symptoms of subjective cognitive decline with a health care professional among adults aged 45 years and older with subjective cognitive decline (Age-adjusted Prevalence, %)",79,86.4,66,42.6
+cdc_indicators,chc03,REAL,"Provided care for someone with dementia or other cognitive impairment in the past month among adults (Age-adjusted Prevalence, %)",63,89.2,49,20.3
+cdc_indicators,chc04,REAL,"Provided care for a friend or family member in the past month among adults (Age-adjusted Prevalence, %)",63,89.2,49,22.1
+cdc_indicators,dia01,REAL,"Diabetes among adults (Age-adjusted Prevalence, %)",216,63.0,76,7.2
+cdc_indicators,dia02,REAL,"Gestational diabetes among women with a recent live birth (Crude Prevalence, %)",123,78.9,68,15.0
+cdc_indicators,dia03,REAL,"Diabetes mortality among all people, underlying or contributing cause (Age-adjusted Rate, cases per 100,000)",156,73.2,142,45.8
+cdc_indicators,dia04,REAL,"Diabetic ketoacidosis mortality among all people, underlying or contributing cause (Age-adjusted Rate, cases per 100,000)",139,76.2,34,2.0
+cdc_indicators,dis01,REAL,"Adults with any disability (Age-adjusted Prevalence, %)",216,63.0,115,25.9
+cdc_indicators,hea01,REAL,"Fair or poor self-rated health status among adults (Age-adjusted Prevalence, %)",216,63.0,107,15.5
+cdc_indicators,hea02,REAL,"Average recent physically unhealthy days among adults (Age-adjusted Mean, Number)",216,63.0,29,3.6
+cdc_indicators,hea03,REAL,"Frequent physical distress among adults (Age-adjusted Prevalence, %)",216,63.0,74,9.9
+cdc_indicators,hea04,REAL,"Recent activity limitation among adults (Age-adjusted Mean, Number)",216,63.0,24,2.5
+cdc_indicators,hea05,REAL,"2 or more chronic conditions among adults (Age-adjusted Prevalence, %)",216,63.0,91,12.7
+cdc_indicators,hea06,REAL,"Life expectancy at birth (Number, Years)",104,82.2,55,77.7
+cdc_indicators,imm01,REAL,"Influenza vaccination among adults (Age-adjusted Prevalence, %)",216,63.0,139,37.0
+cdc_indicators,imm02,REAL,"Influenza vaccination among adults 18-64 who are at increased risk (Age-adjusted Prevalence, %)",214,63.3,140,36.3
+cdc_indicators,imm03,REAL,"Pneumococcal vaccination among adults aged 18-64 years who are at increased risk (Age-adjusted Prevalence, %)",214,63.3,129,33.9
+cdc_indicators,imm04,REAL,"Pneumococcal vaccination among adults aged 65 years and older (Age-adjusted Prevalence, %)",216,63.0,117,67.6
+cdc_indicators,mat01,REAL,"Postpartum checkup among women with a recent live birth (Crude Prevalence, %)",123,78.9,72,88.3
+cdc_indicators,men01,REAL,"Current poor mental health among high school students (Crude Prevalence, %)",36,93.8,31,27.5
+cdc_indicators,men02,REAL,"Depression among adults (Age-adjusted Prevalence, %)",215,63.1,113,17.2
+cdc_indicators,men03,REAL,"Postpartum depressive symptoms among women with a recent live birth (Crude Prevalence, %)",123,78.9,69,12.2
+cdc_indicators,men04,REAL,"Average mentally unhealthy days among adults (Age-adjusted Mean, Number)",213,63.5,48,3.7
+cdc_indicators,men05,REAL,"Frequent mental distress among adults (Age-adjusted Prevalence, %)",216,63.0,85,11.9
+cdc_indicators,npw01,REAL,"Consumed fruit less than one time daily among high school students (Crude Prevalence, %)",86,85.2,56,7.0
+cdc_indicators,npw02,REAL,"Consumed fruit less than one time daily among adults (Age-adjusted Prevalence, %)",108,81.5,43,42.1
+cdc_indicators,npw03,REAL,"Consumed vegetables less than one time daily among high school students (Crude Prevalence, %)",76,87.0,56,6.7
+cdc_indicators,npw04,REAL,"Consumed vegetables less than one time daily among adults (Age-adjusted Prevalence, %)",107,81.6,64,18.8
+cdc_indicators,npw05,REAL,"Consumed regular soda at least one time daily among high school students (Crude Prevalence, %)",82,85.9,68,13.6
+cdc_indicators,npw06,REAL,"No leisure-time physical activity among adults (Age-adjusted Prevalence, %)",216,63.0,114,21.6
+cdc_indicators,npw07,REAL,"Children and adolescents aged 6-13 years meeting aerobic physical activity guideline (Crude Prevalence, %)",104,82.2,83,36.6
+cdc_indicators,npw08,REAL,"Met aerobic physical activity guideline among high school students (Crude Prevalence, %)",95,83.7,61,17.9
+cdc_indicators,npw09,REAL,"Met aerobic physical activity guideline for substantial health benefits, adults (Age-adjusted Prevalence, %)",53,90.9,48,57.4
+cdc_indicators,npw10,REAL,"Infants who were breastfed at 12 months (Crude Prevalence, %)",106,81.8,90,50.9
+cdc_indicators,npw11,REAL,"Infants who were exclusively breastfed through 6 months (Crude Prevalence, %)",106,81.8,80,30.9
+cdc_indicators,npw12,REAL,"Obesity among WIC children aged 2 to 4 years (Crude Prevalence, %)",54,90.7,40,19.9
+cdc_indicators,npw13,REAL,"Obesity among high school students (Crude Prevalence, %)",95,83.7,66,14.8
+cdc_indicators,npw14,REAL,"Obesity among adults (Age-adjusted Prevalence, %)",216,63.0,118,30.7
+cdc_indicators,orh01,REAL,"No teeth lost among adults aged 18-64 years (Age-adjusted Prevalence, %)",109,81.3,80,67.3
+cdc_indicators,orh02,REAL,"Six or more teeth lost among adults aged 65 years and older (Age-adjusted Prevalence, %)",109,81.3,90,27.5
+cdc_indicators,orh03,REAL,"All teeth lost among adults aged 65 years and older (Age-adjusted Prevalence, %)",108,81.5,77,13.1
+cdc_indicators,orh04,REAL,"Visited dentist or other oral health care provider in the past 12 months among children and adolescents aged 1-17 years (Crude Prevalence, %)",104,82.2,76,82.2
+cdc_indicators,orh05,REAL,"Receipt of evidence-based preventive dental services in the past 12 months among children and adolescents aged 1-17 years (Crude Prevalence, %)",104,82.2,87,54.9
+cdc_indicators,orh06,REAL,"Visited dentist or dental clinic in the past year among adults (Age-adjusted Prevalence, %)",109,81.3,83,62.6
+cdc_indicators,orh07,REAL,"Preventive dental care in the 12 months before pregnancy among women with a recent live birth (Crude Prevalence, %)",123,78.9,88,46.9
+cdc_indicators,slp01,REAL,"Short sleep duration among children aged 4 months to 14 years (Crude Prevalence, %)",104,82.2,80,30.7
+cdc_indicators,slp02,REAL,"Short sleep duration among high school students (Crude Prevalence, %)",88,84.9,69,74.4
+cdc_indicators,slp03,REAL,"Short sleep duration among adults (Age-adjusted Prevalence, %)",109,81.3,75,31.6
+cdc_indicators,sdh01,REAL,"Living below 150% of the poverty threshold among all people (Crude Prevalence, %)",104,82.2,71,17.7
+cdc_indicators,sdh02,REAL,"High school completion among adults aged 18-24 (Crude Prevalence, %)",104,82.2,62,87.0
+cdc_indicators,sdh03,REAL,"No broadband internet subscription among households (Crude Prevalence, %)",104,82.2,73,14.1
+cdc_indicators,sdh04,REAL,"Food insecure in the past 12 months among households (Crude Prevalence, %)",52,91.1,39,9.5
+cdc_indicators,sdh05,REAL,"Unable to pay mortgage, rent, or utility bills in the past 12 months among adults (Age-adjusted Prevalence, %)",38,93.5,33,12.5
+cdc_indicators,sdh06,REAL,"Lack of reliable transportation in the past 12 months among adults (Age-adjusted Prevalence, %)",38,93.5,30,10.5
+cdc_indicators,sdh07,REAL,"Lack of social and emotional support needed among adults (Age-adjusted Prevalence, %)",38,93.5,31,8.8
+cdc_indicators,sdh08,REAL,"Unemployment rate among people 16 years and older in the labor force (Crude Prevalence, %)",104,82.2,52,5.6
+cdc_indicators,sdh09,REAL,"Lack of health insurance among adults aged 18-64 years (Age-adjusted Prevalence, %)",199,65.9,121,11.7
+cdc_indicators,sdh10,REAL,"Health insurance coverage in the month before pregnancy among women with a recent live birth (Crude Prevalence, %)",123,78.9,97,89.0
+cdc_indicators,sdh11,REAL,"Health insurance coverage after pregnancy among women with a recent live birth (Crude Prevalence, %)",123,78.9,86,89.1
+cdc_indicators,sdh12,REAL,"Routine checkup within the past year among adults (Age-adjusted Prevalence, %)",199,65.9,111,70.3
+cdc_indicators,tob01,REAL,"Current tobacco use of any tobacco product among high school students (Crude Prevalence, %)",77,86.8,66,31.1
+cdc_indicators,tob02,REAL,"Current electronic vapor product use among high school students (Crude Prevalence, %)",93,84.0,79,26.1
+cdc_indicators,tob03,REAL,"Current smokeless tobacco use among high school students (Crude Prevalence, %)",81,86.1,52,10.0
+cdc_indicators,tob04,REAL,"Current cigarette smoking among adults (Age-adjusted Prevalence, %)",214,63.3,118,17.6
+cdc_indicators,tob05,REAL,"Cigarette smoking during pregnancy among women with a recent live birth (Crude Prevalence, %)",123,78.9,75,10.2
+cdc_indicators,tob06,REAL,"Quit attempts in the past year among adult current smokers (Age-adjusted Prevalence, %)",151,74.1,102,60.6
+cdc_indicators,tob07,REAL,"Proportion of the population protected by a comprehensive smoke-free policy prohibiting smoking in all indoor areas of workplaces and public places, including restaurants and bars (Proportion, %)",163,72.0,59,47.1
+indicator_catalog,question_id,TEXT,"CDC indicator code, e.g. DIA01.",109,0.0,109,ALC01
+indicator_catalog,wide_column,TEXT,Column name of this indicator in cdc_indicators.,109,0.0,109,alc01
+indicator_catalog,topic_id,TEXT,CDC topic code.,109,0.0,19,ALC
+indicator_catalog,topic,TEXT,Chronic disease topic.,109,0.0,19,Alcohol
+indicator_catalog,question,TEXT,Indicator definition.,109,0.0,109,Alcohol use among high school students
+indicator_catalog,data_source,TEXT,"Survey or surveillance system behind the estimate (BRFSS, NVSS, YRBSS, ...).",109,0.0,14,YRBSS
+indicator_catalog,data_value_type_id,TEXT,"Code for the kind of estimate (CRDPREV, AGEADJPREV, CRDRATE, NMBR, ...).",109,0.0,9,CRDPREV
+indicator_catalog,data_value_type,TEXT,"Kind of estimate, e.g. crude or age-adjusted prevalence.",109,0.0,9,Crude Prevalence
+indicator_catalog,data_value_unit,TEXT,"Unit of data_value (%, per 100,000, Number, ...).",109,0.0,8,%
+indicator_catalog,n_locations,INTEGER,Locations with an overall value of the chosen type.,109,0.0,16,50
+indicator_catalog,first_year,INTEGER,Earliest year_start with a value.,109,0.0,6,2019
+indicator_catalog,last_year,INTEGER,Latest year_end with a value.,109,0.0,4,2021
+fda_drug_labels,id,TEXT,openFDA label document id.,1,0.0,1,ca7bbcc8-2354-375c-e053-2995a90a72a0
+fda_drug_labels,set_id,TEXT,Structured Product Labeling set id (stable across label versions).,1,0.0,1,0000025c-6dbf-4af7-a741-5cbacaed519a
+fda_drug_labels,effective_time,TEXT,Label effective date.,1,0.0,1,2021-09-02 00:00:00
+fda_drug_labels,version,TEXT,Label version number.,1,0.0,1,2
+fda_drug_labels,brand_name,TEXT,"openfda.brand_name, joined with '; '.",1,0.0,1,SILICEA
+fda_drug_labels,generic_name,TEXT,"openfda.generic_name, joined with '; '.",1,0.0,1,SILICEA
+fda_drug_labels,manufacturer_name,TEXT,"openfda.manufacturer_name, joined with '; '.",1,0.0,1,"Rxhomeo Private Limited d.b.a. Rxhomeo, Inc"
+fda_drug_labels,product_type,TEXT,openfda.product_type (e.g. HUMAN OTC DRUG).,1,0.0,1,HUMAN OTC DRUG
+fda_drug_labels,route,TEXT,"openfda.route, joined with '; '.",1,0.0,1,ORAL
+fda_drug_labels,purpose,TEXT,Purpose section text.,1,0.0,1,"USES USES: Temporary Relief - Acne, Boils* * Claims based on"
+fda_drug_labels,indications_and_usage,TEXT,Indications and usage section text.,1,0.0,1,INDICATIONS Condition listed above or as directed by the phy
+fda_drug_labels,warnings,TEXT,Warnings section text.,1,0.0,1,WARNINGS This product is to be used for self-limiting condit
+fda_drug_labels,dosage_and_administration,TEXT,Dosage and administration section text.,1,0.0,1,"DOSAGE Adults- Take 4 or 6 Pellets by mouth, three times dai"
+fda_drug_labels,active_ingredient,TEXT,Active ingredient section text.,1,0.0,1,ACTIVE INGREDIENT SILICEA HPUS 2X and higher
+fda_drug_labels,inactive_ingredient,TEXT,Inactive ingredient section text.,1,0.0,1,INACTIVE INGREDIENTS Sucrose
+fda_drug_labels,n_sections,INTEGER,Number of label sections present in the record.,1,0.0,1,14
+fda_drug_labels,raw_json,TEXT,Full openFDA record as JSON.,1,0.0,1,"{""active_ingredient"": [""ACTIVE INGREDIENT SILICEA HPUS 2X an"
+clinical_encounters,encounter_id,TEXT,Encounter identifier (simulated).,5,0.0,5,ENC001
+clinical_encounters,patient_id,TEXT,Patient identifier (simulated).,5,0.0,5,PT1001
+clinical_encounters,encounter_date,TEXT,Encounter date.,5,0.0,5,2024-01-15 00:00:00
+clinical_encounters,department,TEXT,Hospital department.,5,0.0,4,Cardiology
+clinical_encounters,diagnosis_code,TEXT,ICD-10-CM diagnosis code.,5,0.0,5,I10
+clinical_encounters,provider,TEXT,Attending provider (placeholder name).,5,0.0,5,Dr. Smith

@@ -1,0 +1,19 @@
+table,check,checked,failed,action,status
+cdc_raw_clean,exact duplicate rows,309215,0,removed by the natural-key step,pass
+cdc_raw_clean,"rows sharing the course key (year_start, location, topic, question)",309215,293903,"none: these are distinct strata and value types, not duplicates",info
+cdc_raw_clean,duplicate natural key,309215,0,dropped (kept first),pass
+cdc_raw_clean,year outside 1900-2026,309215,0,reported,pass
+cdc_raw_clean,year_start after year_end,309215,0,reported,pass
+cdc_raw_clean,negative data_value,209196,0,set to missing,pass
+cdc_raw_clean,percentage outside 0-100,135432,0,set to missing,pass
+cdc_raw_clean,estimate outside its 95% CI,188885,0,reported,pass
+cdc_raw_clean,"IQR outlier within indicator, period and stratum",209196,6692,flagged in is_outlier_iqr (kept),flag
+cdc_raw_clean,"|z| > 3 within indicator, period and stratum",209196,1867,flagged in is_outlier_z (kept),flag
+fda_drug_labels,missing label id,1,0,reported,pass
+fda_drug_labels,duplicate label id,1,0,reported,pass
+fda_drug_labels,missing or unparseable effective_time,1,0,reported,pass
+clinical_encounters,duplicate encounter_id,5,0,reported,pass
+clinical_encounters,missing patient_id,5,0,reported,pass
+clinical_encounters,missing or unparseable encounter_date,5,0,reported,pass
+clinical_encounters,encounter_date in the future,5,0,reported,pass
+clinical_encounters,diagnosis_code not ICD-10-CM format,5,0,reported,pass

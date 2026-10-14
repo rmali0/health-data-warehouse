@@ -1,0 +1,110 @@
+question_id,wide_column,topic_id,topic,question,data_source,data_value_type_id,data_value_type,data_value_unit,n_locations,first_year,last_year
+ALC01,alc01,ALC,Alcohol,Alcohol use among high school students,YRBSS,CRDPREV,Crude Prevalence,%,50,2019,2021
+ALC04,alc04,ALC,Alcohol,Binge drinking frequency among adults who binge drink,BRFSS,CRDMEDN,Crude Median,Number,55,2019,2022
+ALC05,alc05,ALC,Alcohol,Binge drinking intensity among adults who binge drink,BRFSS,CRDMEDN,Crude Median,Number,55,2019,2022
+ALC06,alc06,ALC,Alcohol,Binge drinking prevalence among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+ALC07,alc07,ALC,Alcohol,Binge drinking prevalence among high school students,YRBSS,CRDPREV,Crude Prevalence,%,48,2019,2021
+ALC08,alc08,ALC,Alcohol,Per capita alcohol consumption among people aged 14 years and older,AEDS,PERCAPALC,Per capita alcohol consumption gallons,gallons,52,2019,2021
+ALC09,alc09,ALC,Alcohol,"Chronic liver disease mortality among all people, underlying cause",NVSS,AGEADJRATE,Age-adjusted Rate,"cases per 100,000",52,2019,2021
+ART01,art01,ART,Arthritis,Arthritis among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+ART02,art02,ART,Arthritis,Activity limitation due to arthritis among adults with arthritis,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2021
+ART03,art03,ART,Arthritis,Severe joint pain among adults with arthritis,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2021
+ART04,art04,ART,Arthritis,Work limitation due to arthritis among adults aged 18-64 years with arthritis,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2021
+ART05,art05,ART,Arthritis,Physical inactivity among adults with arthritis,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2021
+ART06,art06,ART,Arthritis,Received health care provider counseling for physical activity among adults with arthritis,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2021
+ART07,art07,ART,Arthritis,Have taken an educational class to learn how to manage arthritis symptoms among adults with arthritis,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,54,2019,2021
+AST01,ast01,AST,Asthma,"Asthma mortality among all people, underlying cause",NVSS,AGEADJRATE,Age-adjusted Rate,"cases per 100,000",40,2019,2021
+AST02,ast02,AST,Asthma,Current asthma among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+CAN01,can01,CAN,Cancer,"Colon and rectum (colorectal) cancer mortality among all people, underlying cause",US Cancer DVT,AGEADJRATE,Age-adjusted Rate,"per 100,000",52,2015,2020
+CAN02,can02,CAN,Cancer,"Breast cancer mortality among all females, underlying cause",US Cancer DVT,AGEADJRATE,Age-adjusted Rate,"per 100,000",52,2015,2020
+CAN03,can03,CAN,Cancer,"Cervical cancer mortality among all females, underlying cause",US Cancer DVT,AGEADJRATE,Age-adjusted Rate,"per 100,000",52,2015,2020
+CAN04,can04,CAN,Cancer,"Lung and bronchial cancer mortality among all people, underlying cause",US Cancer DVT,AGEADJRATE,Age-adjusted Rate,"per 100,000",52,2015,2020
+CAN05,can05,CAN,Cancer,"Prostate cancer mortality among all males, underlying cause",US Cancer DVT,AGEADJRATE,Age-adjusted Rate,"per 100,000",52,2015,2020
+CAN06,can06,CAN,Cancer,Colorectal cancer screening among adults aged 45-75 years,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2020,2022
+CAN07,can07,CAN,Cancer,"Invasive cancer (all sites combined), incidence",US Cancer DVT,AGEADJRATE,Age-adjusted Rate,"per 100,000",53,2015,2020
+CAN08,can08,CAN,Cancer,"Invasive cancer (all sites combined) mortality among all people, underlying cause",US Cancer DVT,AGEADJRATE,Age-adjusted Rate,"per 100,000",52,2015,2020
+CAN09,can09,CAN,Cancer,Mammography use among women aged 50-74 years,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2020,2022
+CAN10,can10,CAN,Cancer,Cervical cancer screening among women aged 21-65 years,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,54,2020,2020
+CVD01,cvd01,CVD,Cardiovascular Disease,High blood pressure among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2021
+CVD02,cvd02,CVD,Cardiovascular Disease,Taking medicine to control high blood pressure among adults with high blood pressure,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2021
+CVD03,cvd03,CVD,Cardiovascular Disease,High cholesterol among adults who have been screened,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2021
+CVD04,cvd04,CVD,Cardiovascular Disease,Taking medicine for high cholesterol among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2021
+CVD06,cvd06,CVD,Cardiovascular Disease,"Hospitalization for heart failure as principal diagnosis, Medicare-beneficiaries aged 65 years and older",CMS Part A Claims Data,AGEADJRATE,Age-adjusted Rate,"cases per 1,000",52,2019,2021
+CVD07,cvd07,CVD,Cardiovascular Disease,"Cerebrovascular disease (stroke) mortality among all people, underlying cause",NVSS,AGEADJRATE,Age-adjusted Rate,"cases per 100,000",52,2019,2021
+CVD08,cvd08,CVD,Cardiovascular Disease,"Coronary heart disease mortality among all people, underlying cause",NVSS,AGEADJRATE,Age-adjusted Rate,"cases per 100,000",52,2019,2021
+CVD09,cvd09,CVD,Cardiovascular Disease,"Diseases of the heart mortality among all people, underlying cause",NVSS,AGEADJRATE,Age-adjusted Rate,"cases per 100,000",52,2019,2021
+CKD01,ckd01,CKD,Chronic Kidney Disease,Incidence of treated end-stage kidney disease,USRDS,AGESEXRACEADJRATE,"Adjusted rate by age, sex, race and ethnicity","cases per 1,000,000",52,2019,2019
+COPD01,copd01,COPD,Chronic Obstructive Pulmonary Disease,Chronic obstructive pulmonary disease among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+COPD02,copd02,COPD,Chronic Obstructive Pulmonary Disease,Current smoking among adults with chronic obstructive pulmonary disease,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,54,2019,2021
+COPD03,copd03,COPD,Chronic Obstructive Pulmonary Disease,"Hospitalization for chronic obstructive pulmonary disease as any diagnosis, Medicare-beneficiaries aged 65 years and older",CMS Part A Claims Data,AGEADJRATE,Age-adjusted Rate,"cases per 1,000",52,2019,2021
+COPD04,copd04,COPD,Chronic Obstructive Pulmonary Disease,"Hospitalization for chronic obstructive pulmonary disease as principal diagnosis, Medicare-beneficiaries aged 65 years and older",CMS Part A Claims Data,AGEADJRATE,Age-adjusted Rate,"cases per 1,000",52,2019,2021
+COPD05,copd05,COPD,Chronic Obstructive Pulmonary Disease,"Chronic obstructive pulmonary disease mortality among adults aged 45 years and older, underlying cause",NVSS,AGEADJRATE,Age-adjusted Rate,"cases per 100,000",52,2019,2021
+COPD06,copd06,COPD,Chronic Obstructive Pulmonary Disease,"Chronic obstructive pulmonary disease mortality among adults aged 45 years and older, underlying or contributing cause",NVSS,AGEADJRATE,Age-adjusted Rate,"cases per 100,000",52,2019,2021
+CHC01,chc01,CHC,Cognitive Health and Caregiving,Subjective cognitive decline among adults aged 45 years and older,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,50,2019,2022
+CHC02,chc02,CHC,Cognitive Health and Caregiving,Discussed symptoms of subjective cognitive decline with a health care professional among adults aged 45 years and older with subjective cognitive decline,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,50,2019,2022
+CHC03,chc03,CHC,Cognitive Health and Caregiving,Provided care for someone with dementia or other cognitive impairment in the past month among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,51,2019,2022
+CHC04,chc04,CHC,Cognitive Health and Caregiving,Provided care for a friend or family member in the past month among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,51,2019,2022
+DIA01,dia01,DIA,Diabetes,Diabetes among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+DIA02,dia02,DIA,Diabetes,Gestational diabetes among women with a recent live birth,PRAMS,CRDPREV,Crude Prevalence,%,46,2019,2021
+DIA03,dia03,DIA,Diabetes,"Diabetes mortality among all people, underlying or contributing cause",NVSS,AGEADJRATE,Age-adjusted Rate,"cases per 100,000",52,2019,2021
+DIA04,dia04,DIA,Diabetes,"Diabetic ketoacidosis mortality among all people, underlying or contributing cause",NVSS,AGEADJRATE,Age-adjusted Rate,"cases per 100,000",49,2019,2021
+DIS01,dis01,DIS,Disability,Adults with any disability,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+HEA01,hea01,HEA,Health Status,Fair or poor self-rated health status among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+HEA02,hea02,HEA,Health Status,Average recent physically unhealthy days among adults,BRFSS,AGEADJMEAN,Age-adjusted Mean,Number,55,2019,2022
+HEA03,hea03,HEA,Health Status,Frequent physical distress among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+HEA04,hea04,HEA,Health Status,Recent activity limitation among adults,BRFSS,AGEADJMEAN,Age-adjusted Mean,Number,55,2019,2022
+HEA05,hea05,HEA,Health Status,2 or more chronic conditions among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+HEA06,hea06,HEA,Health Status,Life expectancy at birth,NVSS,NMBR,Number,Years,52,2019,2020
+IMM01,imm01,IMM,Immunization,Influenza vaccination among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+IMM02,imm02,IMM,Immunization,Influenza vaccination among adults 18-64 who are at increased risk,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,54,2019,2022
+IMM03,imm03,IMM,Immunization,Pneumococcal vaccination among adults aged 18-64 years who are at increased risk,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,54,2019,2022
+IMM04,imm04,IMM,Immunization,Pneumococcal vaccination among adults aged 65 years and older,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+MAT01,mat01,MAT,Maternal Health,Postpartum checkup among women with a recent live birth,PRAMS,CRDPREV,Crude Prevalence,%,46,2019,2021
+MEN01,men01,MEN,Mental Health,Current poor mental health among high school students,YRBSS,CRDPREV,Crude Prevalence,%,36,2021,2021
+MEN02,men02,MEN,Mental Health,Depression among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+MEN03,men03,MEN,Mental Health,Postpartum depressive symptoms among women with a recent live birth,PRAMS,CRDPREV,Crude Prevalence,%,46,2019,2021
+MEN04,men04,MEN,Mental Health,Average mentally unhealthy days among adults,BRFSS,AGEADJMEAN,Age-adjusted Mean,Number,55,2019,2022
+MEN05,men05,MEN,Mental Health,Frequent mental distress among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+NPW01,npw01,NPAW,"Nutrition, Physical Activity, and Weight Status",Consumed fruit less than one time daily among high school students,YRBSS,CRDPREV,Crude Prevalence,%,46,2019,2021
+NPW02,npw02,NPAW,"Nutrition, Physical Activity, and Weight Status",Consumed fruit less than one time daily among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,54,2019,2021
+NPW03,npw03,NPAW,"Nutrition, Physical Activity, and Weight Status",Consumed vegetables less than one time daily among high school students,YRBSS,CRDPREV,Crude Prevalence,%,39,2019,2021
+NPW04,npw04,NPAW,"Nutrition, Physical Activity, and Weight Status",Consumed vegetables less than one time daily among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2021
+NPW05,npw05,NPAW,"Nutrition, Physical Activity, and Weight Status",Consumed regular soda at least one time daily among high school students,YRBSS,CRDPREV,Crude Prevalence,%,45,2019,2021
+NPW06,npw06,NPAW,"Nutrition, Physical Activity, and Weight Status",No leisure-time physical activity among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+NPW07,npw07,NPAW,"Nutrition, Physical Activity, and Weight Status",Children and adolescents aged 6-13 years meeting aerobic physical activity guideline,NSCH,CRDPREV,Crude Prevalence,%,52,2018,2021
+NPW08,npw08,NPAW,"Nutrition, Physical Activity, and Weight Status",Met aerobic physical activity guideline among high school students,YRBSS,CRDPREV,Crude Prevalence,%,50,2019,2021
+NPW09,npw09,NPAW,"Nutrition, Physical Activity, and Weight Status","Met aerobic physical activity guideline for substantial health benefits, adults",BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,53,2019,2019
+NPW10,npw10,NPAW,"Nutrition, Physical Activity, and Weight Status",Infants who were breastfed at 12 months,NIS,CRDPREV,Crude Prevalence,%,53,2019,2020
+NPW11,npw11,NPAW,"Nutrition, Physical Activity, and Weight Status",Infants who were exclusively breastfed through 6 months,NIS,CRDPREV,Crude Prevalence,%,53,2019,2020
+NPW12,npw12,NPAW,"Nutrition, Physical Activity, and Weight Status",Obesity among WIC children aged 2 to 4 years,WIC Participant and Program Characteristics,CRDPREV,Crude Prevalence,%,54,2020,2020
+NPW13,npw13,NPAW,"Nutrition, Physical Activity, and Weight Status",Obesity among high school students,YRBSS,CRDPREV,Crude Prevalence,%,50,2019,2021
+NPW14,npw14,NPAW,"Nutrition, Physical Activity, and Weight Status",Obesity among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+ORH01,orh01,ORH,Oral Health,No teeth lost among adults aged 18-64 years,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2020,2022
+ORH02,orh02,ORH,Oral Health,Six or more teeth lost among adults aged 65 years and older,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2020,2022
+ORH03,orh03,ORH,Oral Health,All teeth lost among adults aged 65 years and older,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2020,2022
+ORH04,orh04,ORH,Oral Health,Visited dentist or other oral health care provider in the past 12 months among children and adolescents aged 1-17 years,NSCH,CRDPREV,Crude Prevalence,%,52,2018,2021
+ORH05,orh05,ORH,Oral Health,Receipt of evidence-based preventive dental services in the past 12 months among children and adolescents aged 1-17 years,NSCH,CRDPREV,Crude Prevalence,%,52,2018,2021
+ORH06,orh06,ORH,Oral Health,Visited dentist or dental clinic in the past year among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2020,2022
+ORH07,orh07,ORH,Oral Health,Preventive dental care in the 12 months before pregnancy among women with a recent live birth,PRAMS,CRDPREV,Crude Prevalence,%,46,2019,2021
+SLP01,slp01,SLEP,Sleep,Short sleep duration among children aged 4 months to 14 years,NSCH,CRDPREV,Crude Prevalence,%,52,2018,2021
+SLP02,slp02,SLEP,Sleep,Short sleep duration among high school students,YRBSS,CRDPREV,Crude Prevalence,%,48,2019,2021
+SLP03,slp03,SLEP,Sleep,Short sleep duration among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2020,2022
+SDH01,sdh01,SDOH,Social Determinants of Health,Living below 150% of the poverty threshold among all people,ACS,CRDPREV,Crude Prevalence,%,52,2019,2021
+SDH02,sdh02,SDOH,Social Determinants of Health,High school completion among adults aged 18-24,ACS,CRDPREV,Crude Prevalence,%,52,2019,2021
+SDH03,sdh03,SDOH,Social Determinants of Health,No broadband internet subscription among households,ACS,CRDPREV,Crude Prevalence,%,52,2019,2021
+SDH04,sdh04,SDOH,Social Determinants of Health,Food insecure in the past 12 months among households,Current Population Survey - FSS,CRDPREV,Crude Prevalence,%,52,2019,2021
+SDH05,sdh05,SDOH,Social Determinants of Health,"Unable to pay mortgage, rent, or utility bills in the past 12 months among adults",BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,38,2022,2022
+SDH06,sdh06,SDOH,Social Determinants of Health,Lack of reliable transportation in the past 12 months among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,38,2022,2022
+SDH07,sdh07,SDOH,Social Determinants of Health,Lack of social and emotional support needed among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,38,2022,2022
+SDH08,sdh08,SDOH,Social Determinants of Health,Unemployment rate among people 16 years and older in the labor force,ACS,CRDPREV,Crude Prevalence,%,52,2019,2021
+SDH09,sdh09,SDOH,Social Determinants of Health,Lack of health insurance among adults aged 18-64 years,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+SDH10,sdh10,SDOH,Social Determinants of Health,Health insurance coverage in the month before pregnancy among women with a recent live birth,PRAMS,CRDPREV,Crude Prevalence,%,46,2019,2021
+SDH11,sdh11,SDOH,Social Determinants of Health,Health insurance coverage after pregnancy among women with a recent live birth,PRAMS,CRDPREV,Crude Prevalence,%,46,2019,2021
+SDH12,sdh12,SDOH,Social Determinants of Health,Routine checkup within the past year among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,55,2019,2022
+TOB01,tob01,TOB,Tobacco,Current tobacco use of any tobacco product among high school students,YRBSS,CRDPREV,Crude Prevalence,%,42,2019,2021
+TOB02,tob02,TOB,Tobacco,Current electronic vapor product use among high school students,YRBSS,CRDPREV,Crude Prevalence,%,49,2019,2021
+TOB03,tob03,TOB,Tobacco,Current smokeless tobacco use among high school students,YRBSS,CRDPREV,Crude Prevalence,%,44,2019,2021
+TOB04,tob04,TOB,Tobacco,Current cigarette smoking among adults,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,54,2019,2022
+TOB05,tob05,TOB,Tobacco,Cigarette smoking during pregnancy among women with a recent live birth,PRAMS,CRDPREV,Crude Prevalence,%,46,2019,2021
+TOB06,tob06,TOB,Tobacco,Quit attempts in the past year among adult current smokers,BRFSS,AGEADJPREV,Age-adjusted Prevalence,%,54,2019,2022
+TOB07,tob07,TOB,Tobacco,"Proportion of the population protected by a comprehensive smoke-free policy prohibiting smoking in all indoor areas of workplaces and public places, including restaurants and bars",ANRF,PROP,Proportion,%,55,2019,2021

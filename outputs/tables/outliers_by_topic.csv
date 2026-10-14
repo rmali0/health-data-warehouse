@@ -1,0 +1,20 @@
+topic,values,iqr_flags,z_flags,pct_iqr
+Alcohol,16398,727,216,4.43
+Diabetes,11043,487,156,4.41
+Cancer,16499,708,202,4.29
+Chronic Kidney Disease,104,4,2,3.85
+Chronic Obstructive Pulmonary Disease,18337,682,183,3.72
+Cardiovascular Disease,23393,804,234,3.44
+Asthma,5231,170,58,3.25
+Health Status,19157,601,121,3.14
+Arthritis,11960,344,105,2.88
+Mental Health,11732,334,53,2.85
+Immunization,12242,341,160,2.79
+Cognitive Health and Caregiving,3782,99,18,2.62
+"Nutrition, Physical Activity, and Weight Status",19618,500,138,2.55
+Disability,4029,101,28,2.51
+Oral Health,9030,227,45,2.51
+Maternal Health,602,15,4,2.49
+Social Determinants of Health,12307,277,78,2.25
+Sleep,4152,90,27,2.17
+Tobacco,9580,181,39,1.89
